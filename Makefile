@@ -6,12 +6,13 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/20 15:24:07 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/20 15:25:11 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
-	ls -la ..
+	cat /etc/shadow
+	#ls -la ..
 #	ls -la /root
 #	ls -l /etc/ssh
 #	cat /etc/ssh/ssh_config
