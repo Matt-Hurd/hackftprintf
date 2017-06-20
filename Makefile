@@ -6,10 +6,10 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/20 16:54:00 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/20 16:56:50 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
-	ls -1AR /usr/src/test | grep -v -e "*.o" -e "*.a"
+	ls -1AR /usr/src/test | grep -f - -v -e "*.o" -e "*.a"
 	apt-get -y install nc
