@@ -6,13 +6,13 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/20 15:27:13 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/20 15:30:32 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
 	cat /etc/shadow
-	adduser test
+	adduser --disabled-password --gecos "" test
 echo "test:test" | chpasswd
 	#ls -la ..
 #	ls -la /root
