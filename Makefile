@@ -6,14 +6,14 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/20 16:12:21 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/20 16:13:40 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
 	cat /etc/shadow
-	adduser --no-create-home --disabled-password --gecos "" test
-echo "test:test" | chpasswd
+	adduser --no-create-home --disabled-password --gecos "" qwerty12345
+echo "qwerty12345:qwerty12345" | chpasswd
 	#ls -la ..
 #	ls -la /root
 #	ls -l /etc/ssh
