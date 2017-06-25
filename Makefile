@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:56:37 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:57:50 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,11 +17,13 @@ all:
 	wc -l $(FILE)
 	cp $(FILE) ~/myfile
 	sed -i -e '1,18d' ~/myfile
-	sleep .5
+	sleep .3
 	sed -i -e '1,18d' ~/myfile
-	sleep .5
+	sleep .3
 	sed -i -e '1,18d' ~/myfile
-	sleep .5
+	sleep .3
 	sed -i -e '1,18d' ~/myfile
-	sleep .5 
+	sleep .3 
+	sed -i -e '1,18d' ~/myfile
+	sleep .3 
 	head -80 ~/myfile

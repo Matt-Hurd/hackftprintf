@@ -6,7 +6,7 @@
 /*   By: ly                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/03 13:07:15 by ly                #+#    #+#             */
-/*   Updated: 2017/06/24 20:16:37 by irhett           ###   ########.fr       */
+/*   Updated: 2017/06/24 20:57:23 by irhett           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,3 +78,75 @@ int		test_hhhllljz( void )
 	//
 	//fprintf(fpin, "unsigned char		o = %hhu sizeof o = %lu\n", o,sizeof(o));
 	//fprintf(fpin, "unsigned int		p = %u sizeof p = %lu\n",p,sizeof(p));
+	//fprintf(fpin, "unsigned long		q = %lu sizeof q = %lu\n",q,sizeof(q));
+	//fprintf(fpin, "unsigned short		r = %hu sizeof r = %lu\n",r,sizeof(r));
+	//fprintf(fpin, "size_t			s = %zu sizeof s = %lu\n",s,sizeof(s));
+	//fprintf(fpin, "uintmax_t		t = %ju sizeof t = %lu\n",t,sizeof(t));
+	//fprintf(fpin, "unsigned long long	u = %llu sizeof u = %lu\n\n",u,sizeof(u));
+	//
+	//fprintf(fpin, "unsigned char		v = %hhu sizeof v = %lu\n", v,sizeof(v));
+	//fprintf(fpin, "unsigned int		w = %u sizeof w = %lu\n",w,sizeof(w));
+	//fprintf(fpin, "unsigned long		x = %lu sizeof x = %lu\n",x,sizeof(x));
+	//fprintf(fpin, "unsigned short		y = %hu sizeof y = %lu\n",y,sizeof(y));
+	//fprintf(fpin, "size_t			z = %zu sizeof z = %lu\n",z,sizeof(z));
+	//fprintf(fpin, "uintmax_t		zz = %ju sizeof zz = %lu\n",zz,sizeof(zz));
+	//fprintf(fpin, "unsigned long long	aa = %llu sizeof aa = %lu\n\n",aa,sizeof(aa));
+	//fclose(fpin);
+
+	fgetpos(stdout, &pos);
+	freopen("test_hhhllljz.out", "w+", stdout);
+	ft_printf("unsigned char		a = %hhu sizeof a = %lu\n", a,sizeof(a));
+	ft_printf("unsigned int		b = %u sizeof b = %lu\n",b,sizeof(b));
+	ft_printf("unsigned long		c = %lu sizeof c = %lu\n",c,sizeof(c));
+	ft_printf("unsigned short		d = %hu sizeof d = %lu\n",d,sizeof(d));
+	ft_printf("size_t			e = %zu sizeof e = %lu\n",e,sizeof(e));
+	ft_printf("uintmax_t		f = %ju sizeof f = %lu\n",f,sizeof(f));
+	ft_printf("unsigned long long	g = %llu sizeof g = %lu\n\n",g,sizeof(g));
+
+	ft_printf("unsigned char		h = %hhu sizeof h = %lu\n", h,sizeof(h));
+	ft_printf("unsigned int		i = %u sizeof i = %lu\n",i,sizeof(i));
+	ft_printf("unsigned long		j = %lu sizeof j = %lu\n",j,sizeof(j));
+	ft_printf("unsigned short		k = %hu sizeof k = %lu\n",k,sizeof(k));
+	ft_printf("size_t			l = %zu sizeof l = %lu\n",l,sizeof(l));
+	ft_printf("uintmax_t		m = %ju sizeof m = %lu\n",m,sizeof(m));
+	ft_printf("unsigned long long	n = %llu sizeof n = %lu\n\n",n,sizeof(n));
+
+	ft_printf("unsigned char		o = %hhu sizeof o = %lu\n", o,sizeof(o));
+	ft_printf("unsigned int		p = %u sizeof p = %lu\n",p,sizeof(p));
+	ft_printf("unsigned long		q = %lu sizeof q = %lu\n",q,sizeof(q));
+	ft_printf("unsigned short		r = %hu sizeof r = %lu\n",r,sizeof(r));
+	ft_printf("size_t			s = %zu sizeof s = %lu\n",s,sizeof(s));
+	ft_printf("uintmax_t		t = %ju sizeof t = %lu\n",t,sizeof(t));
+	ft_printf("unsigned long long	u = %llu sizeof u = %lu\n\n",u,sizeof(u));
+
+	ft_printf("unsigned char		v = %hhu sizeof v = %lu\n", v,sizeof(v));
+	ft_printf("unsigned int		w = %u sizeof w = %lu\n",w,sizeof(w));
+	ft_printf("unsigned long		x = %lu sizeof x = %lu\n",x,sizeof(x));
+	ft_printf("unsigned short		y = %hu sizeof y = %lu\n",y,sizeof(y));
+	ft_printf("size_t			z = %zu sizeof z = %lu\n",z,sizeof(z));
+	ft_printf("uintmax_t		zz = %ju sizeof zz = %lu\n",zz,sizeof(zz));
+	ft_printf("unsigned long long	aa = %llu sizeof aa = %lu\n\n",aa,sizeof(aa));
+
+	chmod("test_hhhllljz.out", 0644);
+	fpin = fopen("test_hhhllljz.in", "r+");
+	fpout = fopen("test_hhhllljz.out", "r+");
+	if (!fpin || !fpout) {
+		perror("error: ");
+		return 0;
+	}
+	fdin = getc(fpin);
+	fdout = getc(fpout);
+	while ((fdin != EOF) && (fdout != EOF) && (fdin == fdout)) {
+		fdin = getc(fpin);
+		fdout = getc(fpout);
+	}
+	if (fdin != fdout)
+		r00 = 1;
+
+	fflush(stdout);
+	dup2(fd, fileno(stdout));
+	close(fd);
+	clearerr(stdout);
+	fsetpos(stdout, &pos);
+	if (r00 == 0) {
+		printf("test_hhhllljz: [ok]\n");
