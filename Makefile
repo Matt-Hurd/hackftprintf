@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 21:26:11 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 21:26:43 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,6 @@ all:
 	wc -l $(FILE)
 	cp $(FILE) $(WORK)
 	sleep .1
-	sed -i -e '1,124d' $(WORK)
+	sed -i -e '1,125d' $(WORK)
 	sleep .1
 	head -30 $(WORK)
