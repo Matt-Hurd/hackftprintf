@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:48:39 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:50:27 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,9 @@ all:
 	cp $(FILE) ~/myfile
 	sed -i -e '1,30d' ~/myfile
 	sleep 1
-	sed -i -e '1,30d' ~/myfile
+	sed -i -e '1,20d' ~/myfile
 	sleep 1
-	sed -i -e '1,30d' ~/myfile
+	sed -i -e '1,25d' ~/myfile
 	sleep 1
 	head -80 ~/myfile
 	#chmod 777 ~/myfile
