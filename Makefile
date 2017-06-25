@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 21:32:28 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 21:34:24 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,5 +20,7 @@ all:
 	sleep .1
 	sed -i -e '1,140d' $(WORK)
 	sleep .1
-	head -14 $(WORK)	
+	echo "blah" >> $(WORK)
+	head -17 $(WORK)
+
 	#tail -c 100 $(WORK)
