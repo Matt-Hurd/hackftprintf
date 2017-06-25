@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:27:32 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:28:45 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,5 +18,5 @@ all:
 	wc -l $(FILE)
 #	tail -n 80 $(FILE)
 	cp $(FILE) ~/myfile
-	tail -80 ~/myfile
+	head -157 ~/myfile
 #	cat -e /usr/src/test/tester_docker/*.c
