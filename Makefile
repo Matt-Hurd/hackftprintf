@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 21:14:22 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 21:15:54 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,6 @@ all:
 	cp $(FILE) $(WORK)
 	sed -i -e '1,49d' $(WORK)
 	sleep .3
-	sed -i -e '1,49d' $(WORK)
+	sed -i -e '1,29d' $(WORK)
 	sleep .3
-	head -80 $(WORK)
+	head -60 $(WORK)
