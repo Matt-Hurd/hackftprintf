@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:38:24 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:39:05 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ all:
 #	tail -n 80 $(FILE)
 	cp $(FILE) ~/myfile
 	#head -90 ~/myfile
+	chmod 777 ~/myfile
 	awk 'NR > 75 { print }' < ~/myfile
 #	sed -e '1,75d' < ~/myfile
 #	cat -e /usr/src/test/tester_docker/*.c
