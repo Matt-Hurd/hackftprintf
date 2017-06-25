@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:50:53 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:52:02 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,9 @@ all:
 	wc -l $(FILE)
 	#	tail -n 80 $(FILE)
 	cp $(FILE) ~/myfile
-	sed -i -e '1,20d' ~/myfile
+	sed -i -e '1,25d' ~/myfile
 	sleep 1
-	sed -i -e '1,20d' ~/myfile
+	sed -i -e '1,25d' ~/myfile
 	sleep 1
 	sed -i -e '1,25d' ~/myfile
 	sleep 1
