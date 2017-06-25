@@ -6,7 +6,7 @@
 /*   By: ly                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/03 13:07:15 by ly                #+#    #+#             */
-/*   Updated: 2017/06/24 21:26:31 by irhett           ###   ########.fr       */
+/*   Updated: 2017/06/24 21:45:47 by irhett           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,3 +152,6 @@ int		test_hhhllljz( void )
 		printf("test_hhhllljz: [ok]\n");
 		return 1;
 	}
+	printf("test_hhhllljz: [ko]\n");
+	return 0; 
+}

@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 21:44:34 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 21:46:22 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,9 @@ all:
 	wc -l $(FILE)
 	cp $(FILE) $(WORK)
 	sleep .1
-	sed -i -e '1,140d' $(WORK)
+	#sed -i -e '1,140d' $(WORK)
 	sleep .1
-	sed -i -e ':a;N;$$!ba;s/\n/ /g' $(WORK)	
-	head -13 $(WORK)
+#	sed -i -e ':a;N;$$!ba;s/\n/ /g' $(WORK)	
+	head -20 $(WORK)
 
 	#tail -c 100 $(WORK)
