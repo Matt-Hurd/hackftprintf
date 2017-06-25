@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:18:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 20:14:26 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/24 20:15:01 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,5 +16,5 @@ all:
 	which cat
 #	ls -1lAR /usr/src/test | grep -v "*.o"
 	wc -l $(FILE)
-	head -157 $(FILE)
+	head -80 $(FILE)
 #	cat -e /usr/src/test/tester_docker/*.c
