@@ -6,11 +6,11 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/24 21:48:26 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/27 01:09:43 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FILE=/usr/src/test/tester_docker/test_hhhllljz.c
+FILE=/usr/src/test/tester_docker/test_minus.c
 WORK=~/afile
 
 all:
