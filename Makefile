@@ -6,7 +6,7 @@
 #    By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/20 15:19:09 by irhett            #+#    #+#              #
-#    Updated: 2017/06/27 01:09:43 by irhett           ###   ########.fr        #
+#    Updated: 2017/06/27 01:10:32 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,6 @@ all:
 	#sed -i -e '1,140d' $(WORK)
 	#sleep .1
 #	sed -i -e ':a;N;$$!ba;s/\n/wizzlesauce/g' $(WORK)	
-	#head -20 $(WORK)
+	head -79 $(FILE)
 
 	#tail -c 100 $(WORK)
